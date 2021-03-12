@@ -1,0 +1,27 @@
+const myDarkTheme = {
+  palette: {
+    themePrimary: "#00aaff",
+    themeLighterAlt: "#00070a",
+    themeLighter: "#001b29",
+    themeLight: "#00334d",
+    themeTertiary: "#006699",
+    themeSecondary: "#0096e0",
+    themeDarkAlt: "#19b2ff",
+    themeDark: "#3dbeff",
+    themeDarker: "#70cfff",
+    neutralLighterAlt: "#1a1a1a",
+    neutralLighter: "#232323",
+    neutralLight: "#323232",
+    neutralQuaternaryAlt: "#3b3b3b",
+    neutralQuaternary: "#434343",
+    neutralTertiaryAlt: "#636363",
+    neutralTertiary: "#c8c8c8",
+    neutralSecondary: "#d0d0d0",
+    neutralPrimaryAlt: "#dadada",
+    neutralPrimary: "#ffffff",
+    neutralDark: "#f4f4f4",
+    black: "#f8f8f8",
+    white: "#0f0f0f",
+  },
+};
+export default myDarkTheme;

@@ -1,3 +1,5 @@
+import { INavLinkGroup } from "@fluentui/react";
+
 export const SideNavGroups = [
   {
     links: [
@@ -66,14 +68,16 @@ export const SideNavGroups = [
     ],
   },
 ];
-export const SideNavFooterGroups = [
+export const SideNavFooterGroups: INavLinkGroup[] = [
   {
     links: [
       {
         key: "tellafriend",
         name: "Tell a Friend",
-        url: "/",
-
+        url: "",
+        onClick: () => {
+          console.log("share");
+        },
         iconProps: {
           iconName: "Share",
         },
@@ -81,8 +85,10 @@ export const SideNavFooterGroups = [
       {
         key: "feedback",
         name: "Help and Feedback",
-        url: "/",
-
+        url: "",
+        onClick: () => {
+          console.log("feedback");
+        },
         iconProps: {
           iconName: "Feedback",
         },
@@ -96,5 +102,4 @@ export const examplePersona = {
   text: "Fernando Vargas",
   secondaryText: "Software Engineer",
   tertiaryText: "Microsoft Charlotte",
-  optionalText: "Available at 4:00pm",
 };

@@ -16,8 +16,10 @@ body,
 html {
   min-height: 100%;
 }
-#root,
-.ms-Fabric {
+#root {
+  height: 100vh;
+}
+#root > div {
   height: 100vh;
 }
 code {
