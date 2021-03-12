@@ -6,7 +6,6 @@ const iconStyles: IIconProps = {
       fontSize: 18,
       marginRight: 20,
       fontWeight: 500,
-      color: "#999",
     },
   },
 };
@@ -21,6 +20,23 @@ export const SideNavGroups = [
           iconName: "Contact",
           ...iconStyles,
         },
+        links: [
+          {
+            name: "Preferences",
+            url: "http://example.com",
+            target: "_blank",
+          },
+          {
+            name: "Personal Details",
+            url: "http://example.com",
+            target: "_blank",
+          },
+          {
+            name: "Components",
+            url: "http://example.com",
+            target: "_blank",
+          },
+        ],
       },
       {
         key: "message",

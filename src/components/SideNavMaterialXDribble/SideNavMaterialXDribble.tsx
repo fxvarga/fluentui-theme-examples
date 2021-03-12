@@ -3,7 +3,7 @@ import React from "react";
 import { SideNavGroups, SideNavFooterGroups } from "./SideNav.config";
 const SideNavMaterialXDribble = (): JSX.Element => {
   return (
-    <Stack verticalFill tokens={{ padding: "30px 0 0 0" }}>
+    <Stack verticalFill tokens={{ padding: "60px 0 0 0" }}>
       <Stack.Item grow>
         <Nav
           expandButtonAriaLabel="Expand or collapse"
