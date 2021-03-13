@@ -11,12 +11,11 @@ import lightOrDark from "../../helpers/IsLightOrDark";
 const materialXComponents: ComponentsStyles = {
   Nav: {
     styles: (navItemProps: INavStyleProps) => {
-      const { isSelected, theme, isExpanded } = navItemProps;
+      const { isSelected, theme } = navItemProps;
+      const borderRadius = "0 10px 10px 0";
       const themePrimary = theme.palette.themePrimary;
-      const isLightTheme = lightOrDark(theme.palette.themeLight) === "light";
       const activeBackground = themePrimary;
       const isLightActiveBackground = lightOrDark(activeBackground) === "light";
-
       const linkHoverColor = theme.palette.themePrimary;
       const textColor = theme.palette.black;
       const linkActiveColor = isLightActiveBackground ? textColor : "#fff";
@@ -53,7 +52,7 @@ const materialXComponents: ComponentsStyles = {
         link: {
           background: isSelected ? activeBackground : "",
           paddingLeft: 20,
-          borderRadius: " 0 10px 10px 0",
+          borderRadius: borderRadius,
           color: isSelected ? linkActiveColor : "inherit",
           "&:after": {
             border: "none",
@@ -73,7 +72,7 @@ const materialXComponents: ComponentsStyles = {
           justifyContent: "center",
           left: "auto",
           right: 0,
-          borderRadius: "0 10px 10px 0",
+          borderRadius: borderRadius,
           background: "transparent",
           "&:after": {
             border: "none",

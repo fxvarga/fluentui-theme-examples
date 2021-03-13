@@ -4,8 +4,9 @@ const iconStyles: IIconProps = {
   styles: {
     root: {
       fontSize: 18,
-      marginRight: 20,
-      fontWeight: 500,
+      lineHeight: 22,
+      height: "auto",
+      paddingBottom: 8,
     },
   },
 };
@@ -15,33 +16,18 @@ export const SideNavGroups = [
       {
         key: "profile",
         name: "Profile",
-        url: "/",
+        url: "",
+        onClick: () => {},
         iconProps: {
           iconName: "Contact",
           ...iconStyles,
         },
-        links: [
-          {
-            name: "Preferences",
-            url: "http://example.com",
-            target: "_blank",
-          },
-          {
-            name: "Personal Details",
-            url: "http://example.com",
-            target: "_blank",
-          },
-          {
-            name: "Components",
-            url: "http://example.com",
-            target: "_blank",
-          },
-        ],
       },
       {
         key: "message",
         name: "Message",
-        url: "/messages",
+        url: "",
+        onClick: () => {},
 
         iconProps: {
           iconName: "Comment",
@@ -51,8 +37,9 @@ export const SideNavGroups = [
       {
         key: "activity",
         name: "Activity",
-        url: "/activity",
 
+        url: "",
+        onClick: () => {},
         iconProps: {
           iconName: "chart",
           ...iconStyles,
@@ -61,7 +48,8 @@ export const SideNavGroups = [
       {
         key: "lists",
         name: "Lists",
-        url: "/Lists",
+        url: "",
+        onClick: () => {},
 
         iconProps: {
           iconName: "customlist",
@@ -71,8 +59,9 @@ export const SideNavGroups = [
       {
         key: "reports",
         name: "Reports",
-        url: "/reports",
 
+        url: "",
+        onClick: () => {},
         iconProps: {
           iconName: "ReportDocument",
           ...iconStyles,
@@ -81,8 +70,9 @@ export const SideNavGroups = [
       {
         key: "statistics",
         name: "Statistics",
-        url: "/Statistics",
 
+        url: "",
+        onClick: () => {},
         iconProps: {
           iconName: "bookmarkreport",
           ...iconStyles,
@@ -91,8 +81,9 @@ export const SideNavGroups = [
       {
         key: "signout",
         name: "Sign Out",
-        url: "/signout",
 
+        url: "",
+        onClick: () => {},
         iconProps: {
           iconName: "signout",
           ...iconStyles,
@@ -113,6 +104,7 @@ export const SideNavFooterGroups: INavLinkGroup[] = [
         },
         iconProps: {
           iconName: "Share",
+          ...iconStyles,
         },
       },
       {
@@ -124,6 +116,7 @@ export const SideNavFooterGroups: INavLinkGroup[] = [
         },
         iconProps: {
           iconName: "Feedback",
+          ...iconStyles,
         },
       },
     ],
