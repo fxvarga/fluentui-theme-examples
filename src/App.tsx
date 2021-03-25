@@ -4,14 +4,16 @@ import "./App.css";
 import SideNavDefaultPage from "./pages/navigation/SideNavDefaultPage";
 import SideNavIvoDribblePage from "./pages/navigation/SideNavIvoDribblePage";
 import SideNavMaterialXDribblePage from "./pages/navigation/SideNavMaterialXDribble";
+import SideNavYeasinDribblePage from "./pages/navigation/SideNavYeasinDribblePage";
 initializeIcons();
 
 function App() {
   return (
     <>
       <SideNavDefaultPage />
-      <SideNavMaterialXDribblePage />
       <SideNavIvoDribblePage />
+      <SideNavMaterialXDribblePage />
+      <SideNavYeasinDribblePage />
     </>
   );
 }

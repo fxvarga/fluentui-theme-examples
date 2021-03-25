@@ -17,7 +17,7 @@ const materialXComponents: ComponentsStyles = {
       const activeBackground = themePrimary;
       const isLightActiveBackground = lightOrDark(activeBackground) === "light";
       const linkHoverColor = theme.palette.themePrimary;
-      const textColor = theme.palette.black;
+      const textColor = "#333";
       const linkActiveColor = isLightActiveBackground ? textColor : "#fff";
       return {
         root: {},
@@ -57,7 +57,7 @@ const materialXComponents: ComponentsStyles = {
           "&:after": {
             border: "none",
           },
-          "&:hover": {
+          "&:hover, &:active": {
             color: isSelected ? linkActiveColor : linkHoverColor,
             ".ms-Button-icon": {
               color: isSelected ? linkActiveColor : linkHoverColor,

@@ -1,4 +1,5 @@
 import { ComponentsStyles, INavStyleProps, INavStyles } from "@fluentui/react";
+import lightOrDark from "../../helpers/IsLightOrDark";
 
 const IvoMynttinenComponents: ComponentsStyles = {
   Nav: {
@@ -6,9 +7,10 @@ const IvoMynttinenComponents: ComponentsStyles = {
       const { isSelected, theme } = navItemProps;
       const themePrimary = theme.palette.themePrimary;
       const activeBackground = themePrimary;
+      const isLightActiveBackground = lightOrDark(activeBackground) === "light";
       const linkHoverColor = theme.palette.white;
       const textColor = theme.palette.white;
-      const linkActiveColor = theme.palette.white;
+      const linkActiveColor = isLightActiveBackground ? textColor : "#fff";
       return {
         root: {},
         navItems: {},
@@ -40,7 +42,7 @@ const IvoMynttinenComponents: ComponentsStyles = {
         link: {
           background: isSelected ? activeBackground : "",
           color: isSelected ? linkActiveColor : "inherit",
-          "&:hover": {
+          "&:hover, &:active": {
             background: isSelected ? activeBackground : "",
             color: isSelected ? linkActiveColor : linkHoverColor,
             ".ms-Button-icon": {
@@ -58,6 +60,7 @@ const IvoMynttinenComponents: ComponentsStyles = {
           lineHeight: 16,
           height: "auto",
           color: textColor,
+          fontWeight: 400,
         },
       } as INavStyles;
     },

@@ -3,8 +3,6 @@ import LeftSideNavFullHeight from "../../layout/LeftSideNavFullHeight";
 import { ThemeProvider } from "@fluentui/react";
 import SideNavMaterialXDribble from "../../components/SideNav/SideNavMaterialXDribble/SideNavMaterialXDribble";
 import materialXComponents from "../../styles/themes/MaterialXComponents";
-// import myDarkTheme from "../../styles/themes/DarkTheme";
-//This could be a component
 
 function SideNavMaterialXDribblePage() {
   return (
